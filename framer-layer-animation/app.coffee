@@ -51,9 +51,24 @@ swing = new Layer
 	image: "images/swing.png"
 	x: 230
 	y: 40
+	originX: 0.80
+	originY: 0.10
 
 tray.superLayer = base
 disc.superLayer = base
 shaft.superLayer = base
 swing.superLayer = base
 
+#创建一个动画对象
+swingingAnimation = new Animation
+	#动画的属性设置（需要动画的属性、时间、延迟、次数及运动曲线等）
+	time: 1
+	layer: swing
+	properties: 
+		#变化的属性最终值
+		rotation: 30
+
+swingingAnimation.start()
+
+Utils.delay 1.1, ->
+	swingingAnimation.reverse().start()
