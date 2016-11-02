@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="stage">
+  <view class="container">
+    <view class="head" animation="{{animationData}}">
+      <image class="face top" src="../../image/top.png"></image>
+      <image class="face bottom" src="../../image/bottom.png"></image>
+      <image class="face right" src="../../image/left.png"></image>
+      <image class="face left" src="../../image/right.png"></image>
+      <image class="face back" src="../../image/back.png"></image>
+      <block wx:if="{{image}}">
+        <image class="face front" src="{{image}}"></image>
+      </block>
+      <block wx:else>
+        <image class="face front" src="../../image/face.png"></image>
+      </block>
+    </view>
+  </view>
+  <view class="container">
+    <button type="primary" size="mini" catchtap="chooseImage">上传头像</button>
+  </view>
+</view>

@@ -1,0 +1,11 @@
+{
+  "pages":[
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"white",
+    "navigationBarBackgroundColor": "#444",
+    "navigationBarTitleText": "我开始方了",
+    "navigationBarTextStyle":"white"
+  }
+}
