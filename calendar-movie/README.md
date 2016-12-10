@@ -1,33 +1,17 @@
-# NodeJS应用示例
+# 微信小程序——电影日历
 
-## 本地运行
+## 服务端依赖安装
 
-```
-$ git clone https://github.com/sinacloud/nodejs-getting-started.git
-$ cd nodejs-getting-started
-$ npm install
-$ npm start
-```
-
-现在，本示例应用已经跑在了你的 localhost:5050 端口上了。
-
-## 部署到sinacloud
-
-首先，提交代码到你的sinacloud应用的git仓库。
+假设你已经装好了node、npm，在该文件夹中执行下面的命令来安装服务端依赖。
 
 ```
-$ git remote add sinacloud $GIT_REPOS_URL_FOR_YOUR_APPLICATIRON
-$ git push sinacloud master:1
+npm install
+node server.js
 ```
+## 打开小程序开发工具
 
-登陆sinacloud容器云的管理页面，在部署页面中，点击部署。
+现在，本示例服务端已经跑在了你的 localhost:5000 端口上了，这就是你的小程序请求地址，注意在小程序开发工具的项目里开启“开发环境不校验请求域名以及TLS版本”。
 
-部署完成之后，你就可以通过 http://$APPNAME.sinaapp.com 来访问你的应用了。
+用小程序开发工具打开movieCalendar项目，就可以看见效果啦。
 
-## 更多示例
-
-本git仓库的其它分支里还包含了Socket.io、MySQL服务、Memcached服务等的使用示例。
-
-## 相关文档
-
-- [NodeJS应用部署指南](http://www.sinacloud.com/doc/sae/docker/nodejs-getting-started.html)
+- [知乎文章](https://zhuanlan.zhihu.com/p/24262795)

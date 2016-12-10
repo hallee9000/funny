@@ -8,10 +8,10 @@
     position: absolute;
     left:50%;
     top:50%;
-    width:50px;
-    height:50px;
-    margin-left: -25px;
-    margin-top: -25px;
+    width:120rpx;
+    height:120rpx;
+    margin-left: -60rpx;
+    margin-top: -60rpx;
 }
 .container-inner{
     display: -webkit-flex;
@@ -76,9 +76,6 @@
     line-height:40px;
     letter-spacing: -5px;
     margin-right: 10px;
-}
-.movie-info{
-
 }
 .star{
     width:16px;

@@ -23,7 +23,7 @@ Page({
     wx.getStorage({
       key: 'movie',
       success: function(res) {
-        console.log(res.data)
+        // console.log(res.data)
         if(res.data.date==todayDate){
           _this.setData(res.data.movieData);
           _this.loading();
@@ -64,7 +64,7 @@ Page({
         };
     //发送请求，获取电影数据
     wx.request({
-      url:"http://www.juuust.com/api",
+      url:"http://localhost:5000",
       data:reqData,
       header:{
         'Content-Type':'application/json'
