@@ -1,0 +1,39 @@
+.container{
+	max-width: 990px;
+}
+.box-wrapper{
+	display: flex;
+}
+.box-wrapper section[class^=box]{
+	color: #FFF;
+	font-size: 150px;
+	text-align: center;
+	flex-shrink:0;
+}
+.box-a{
+	width:180px;
+	background: #99FFCC;
+}
+.box-b{
+ 	width:600px;
+ 	background: #99CCFF;
+}
+.box-c{
+  	width:180px;
+  	background: #FFCCCC;
+}
+.reverse{
+	flex-direction: row-reverse;
+}
+.reverse .box-b{
+	flex-shrink:1!important;
+}
+.reverse-ab .box-a{
+	order:1;
+}
+.reverse-ab .box-b{
+	order:0;
+}
+.reverse-ab .box-c{
+	order:2;
+}

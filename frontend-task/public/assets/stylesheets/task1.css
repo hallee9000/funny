@@ -1,0 +1,14 @@
+.btn-learn{
+	background-color: rgb(200,20,100);
+	border-color: rgb(200,20,100);
+}
+.btn-learn:hover,.btn-learn:active{
+	background-color: rgb(165, 13, 80);
+	border-color: rgb(165, 13, 80);
+}
+.jumbotron{
+	font-family: Roboto;
+}
+.images-wrapper img{
+	width: 100%;
+}
